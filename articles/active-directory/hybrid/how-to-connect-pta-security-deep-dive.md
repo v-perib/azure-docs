@@ -139,7 +139,7 @@ Pass-through Authentication handles a user sign-in request as follows:
     - This API is the same API that is used by Active Directory Federation Services (AD FS) to sign in users in a federated sign-in scenario.
     - This API relies on the standard resolution process in Windows Server to locate the domain controller.
 12. The Authentication Agent receives the result from Active Directory, such as success, username or password incorrect, or password expired.
-13. The Authentication Agent forwards the result back to Azure AD STS over an outbound mutually authenticated HTTPS channel over port 443. Mutual authentication uses the certificate previously issued to the Authentication Agent during registration.
+13. "The Authentication Agent forwards the result back to Azure AD STS over an outbound mutually authenticated HTTPS channel over port 443. Mutual authentication uses the certificate previously issued to the Authentication Agent during registration."
 14. Azure AD STS verifies that this result correlates with the specific sign-in request on your tenant.
 15. Azure AD STS continues with the sign-in procedure as configured. For example, if the password validation was successful, the user might be challenged for Multi-Factor Authentication or redirected back to the application.
 
