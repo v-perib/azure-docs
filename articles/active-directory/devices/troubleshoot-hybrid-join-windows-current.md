@@ -164,7 +164,9 @@ Possible reasons for failure:
 
 - **DSREG_AUTOJOIN_ADCONFIG_READ_FAILED** (0x801c001d/-2145648611)
    - Reason: Unable to read the SCP object and get the Azure AD tenant information.
-   - Resolution: Refer to the section [Configure a Service Connection Point](hybrid-azuread-join-federated-domains.md#configure-hybrid-azure-ad-join).
+   - Resolution: Refer to the section "Configure a Service Connection Point" for [Federated Domains](https://docs.microsoft.com/en-us/azure/active-directory/devices/hybrid-azuread-join-federated-domains) or [Managed Domains](https://docs.microsoft.com/en-us/azure/active-directory/devices/hybrid-azuread-join-managed-domains).
+   
+   
 - **DSREG_AUTOJOIN_DISC_FAILED** (0x801c0021/-2145648607)
    - Reason: Generic Discovery failure. Failed to get the discovery metadata from DRS.
    - Resolution: Find the suberror below to investigate further.
